@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/CSS_Fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/CSS_Fontawesome/css/fontawesome.min.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <div id="overlay" onclick="closeSideBar()"></div>
+            <div class="webtitle" style="--i:1">
+                <a href="/index.html"><h2>Lhorenz <span>Soriano</span></h2></a>
+            </div>
+            <div class="menu">
+                <i id="hamburger-menu" class="fa-solid fa-bars" onclick="openSideBar()">
+                  <div class="tooltip">Open Sidebar</div>  
+                </i>
+                <nav id="navm" class="nav-mobile">
+                    <div>
+                        <i id="navm2" class="fa-solid fa-arrow-right-long" onclick="closeSideBar()">
+                            <div class="tooltip">Close Sidebar</div>
+                        </i>
+                    </div>
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Projects">Projects</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="nav-desktop">
+                <ul>
+                    <li style="--i:2;"><a href="#Home">Home</a></li>
+                    <li style="--i:3;"><a href="#About">About</a></li>
+                    <li style="--i:4;"><a href="#Skills">Skills</a></li>
+                    <li style="--i:5;"><a href="#Projects">Projects</a></li>
+                    <li style="--i:6;"><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="Home">
+                <div id="home-left">
+                    <div id="home-text">
+                        <h1 style="--i:1;">Hey, It's <span>Lhorenz</span></h1>
+                        <h2 style="--i:2;">I'm a
+                            <span style="--i:2;" data-text="Student Developer">Student Developer</span>
+                            <span style="--i:1;" data-text="CCAI Student">CCAI Student</span>
+                        </h2>
+                        <p style="--i:3;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident, pariatur. Odio distinctio quia dolorum ipsam itaque voluptatibus, rerum suscipit deleniti ipsa corporis omnis sunt soluta voluptas, quaerat iusto alias eum reprehenderit aliquam nobis velit, tenetur veritatis magni! Explicabo, rem ullam.</p>
+                    </div>
+                    <div id="home-buttons" style="--i:4;">
+                        <div id="btn">
+                            <a href="#Contact"><button>Contact Me</button></a>
+                        </div>
+                        <div id="icons">
+                            <a href="https://www.tiktok.com/@renzoo_23?_r=1&_t=ZS-91sdyZQ5xy8" target="_blank">
+                                <i class="fa-brands fa-tiktok">
+                                    <div class="tooltip">Tiktok</div>
+                                </i>
+                            </a>
+                            <a href="https://x.com/LhorenzSoriano" target="_blank">
+                                <i class="fa-brands fa-x-twitter">
+                                    <div class="tooltip">Twitter</div>
+                                </i>
+                            </a>
+                            <a href="https://www.facebook.com/lhorenz.soriano" target="_blank">
+                                <i class="fa-brands fa-facebook-f">
+                                    <div class="tooltip">Facebook</div>
+                                </i>
+                            </a>
+                            <a href="https://discord.com/users/929013360714981438" target="_blank">
+                                <i class="fa-brands fa-discord">
+                                    <div class="tooltip">Discord</div>
+                                </i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="home-right">
+                    <div id="animated-border">
+                        <div id="img-container">
+                            <img src="/Images/hero.png" alt="Photo">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="About">
+                <div class="con-title">
+                    <h1  class="section-title">About</h1>
+                </div>
+                <div id="about-content" class="content">
+                    <div id="about-profile">
+                        <div id="per-motto" class="box-model">
+                            <h2 class="subheading">Personal Motto</h2>
+                            <h3 id="motto">“Learning and improvement come from curiosity, practice, and persistence.”</h3>
+                        </div>
+                        <div class="box-model per-con">
+                            <h2 class="subheading">Personal Information</h2>
+                            <ul id="per-info">
+                                <li><span>Name: </span>Soriano, Lhorenz A.</li>
+                                <li><span>Sex: </span>Male</li>
+                                <li><span>Age: </span>17</li>
+                                <li><span>Current city: </span>Naic</li>
+                                <li><span>Mobile Number: </span>0976 294 2492</li>
+                                <li><span>Email: </span>sorianolhorenz@gmail.com</li>
+                                <li><span>Nickname: </span>Renz</li>
+                                <li><span>Relationship: </span>Taken</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="about-info" class="box-model">
+                        <h2 class="subheading">About Me</h2>
+                        <p>I am an ICT student with a strong interest in coding and technology. I enjoy learning how systems work and solving problems through logical thinking and programming. Coding allows me to challenge myself, improve my skills, and turn ideas into functional projects.</p>
+                        <p>As a student, I am continuously developing my knowledge in programming, web design, and computer-related tasks. I believe that practice and curiosity are important in mastering technology, and I am always eager to learn new tools and concepts.</p>
+                        <p>My goal is to grow as a future IT professional and use my skills to create meaningful and useful digital solutions. I am motivated, hardworking, and ready to improve through experience and learning.</p>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="Skills">
+                <div class="con-title">
+                    <h1 class="section-title">Skills</h1>
+                </div>
+                <div id="skills-content" class="content">
+                    <div id="skill1" class="box-model">
+                        <h2 class="subheading"><i class="fa-brands fa-html5"></i>HTML</h2>
+                        <hr id="hr1">
+                        <div class="skill-p">
+                            <p>I use HTML to build and structure web pages in a clean and organized way. I am comfortable creating complete page layouts using proper and semantic HTML elements to make content clear and readable.</p>
+                            <p>I understand how to structure headings, paragraphs, images, links, forms, and other elements correctly. I also pay attention to keeping my code clean and easy to understand, which helps when styling and adding functionality later on.</p>
+                        </div>
+                        <div id="skillbtn1" class="skillbtn" onclick="skillbtn1()"></div>
+                    </div>
+                    <div id="skill2" class="box-model">
+                        <h2 class="subheading"><i class="fa-brands fa-css"></i>CSS</h2>
+                        <hr id="hr2">
+                        <div class="skill-p">
+                            <p>I use CSS to design and style websites by controlling layout, colors, fonts, and spacing. I am confident in creating responsive layouts that work well on different screen sizes using modern CSS techniques.</p>
+                            <p>I enjoy experimenting with designs and improving the overall look and user experience of a website. I am familiar with using Flexbox and basic Grid layouts, adding hover effects, simple animations, and making pages visually appealing while keeping them organized.</p>
+                        </div>
+                        <div id="skillbtn2" class="skillbtn" onclick="skillbtn2()"></div>
+                    </div>
+                    <div id="skill3" class="box-model">
+                        <h2 class="subheading"><i class="fa-brands fa-js"></i>JAVASCRIPT</h2>
+                        <hr id="hr3">
+                        <div class="skill-p">
+                            <p>I am currently learning the basics of JavaScript and how it is used to add interactivity to websites. I understand simple concepts such as variables, conditions, functions, and basic logic.</p>
+                            <p>I am still improving my skills by practicing small examples and exercises, such as handling user input and simple interactions. My focus right now is to build a strong foundation in JavaScript and gradually apply it to my future projects.</p>
+                        </div>
+                        <div id="skillbtn3" class="skillbtn" onclick="skillbtn3()"></div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="Projects">
+                <div class="con-title">
+                    <h1 class="section-title">Future Projects</h1>
+                </div>
+                <div id="project-content" class="content">
+                    <div class="project-cards box-model">
+                        <div class="img-project">
+                            <div class="pro-con">
+                                <img src="/Images/baisc-calculator.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="text-project">
+                            <h3 class="subheading pj-head">Basic Calculator</h3>
+                            <div class="project-type">
+                                <p class="type1">HTML</p>
+                                <p class="type2">CSS</p>
+                                <p class="type3">JavaScript</p>
+                            </div>
+                            <a href="" class="anchor-project">View Project<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-cards box-model">
+                        <div class="img-project">
+                            <div class="pro-con">
+                                <img src="/Images/calendar.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-project">
+                            <h3 class="subheading pj-head">Calendar</h3>
+                            <div class="project-type">
+                                <p class="type1">HTML</p>
+                                <p class="type2">CSS</p>
+                                <p class="type3">JavaScript</p>
+                            </div>
+                            <a href="" class="anchor-project">View Project<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-cards box-model">
+                        <div class="img-project">
+                            <div class="pro-con">
+                                <img src="/Images/class schedule.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="text-project">
+                            <h3 class="subheading pj-head">Class Schedule</h3>
+                            <div class="project-type">
+                                <p class="type1">HTML</p>
+                                <p class="type2">CSS</p>
+                                <p class="type3">JavaScript</p>
+                            </div>
+                            <a href="" class="anchor-project">View Project<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-cards box-model">
+                        <div class="img-project">
+                            <div class="pro-con">
+                                <img src="/Images/digital clock.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="text-project">
+                            <h3 class="subheading pj-head">Digital Clock</h3>
+                            <div class="project-type">
+                                <p class="type1">HTML</p>
+                                <p class="type2">CSS</p>
+                                <p class="type3">JavaScript</p>
+                            </div>
+                            <a href="" class="anchor-project">View Project<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-cards box-model">
+                        <div class="img-project">
+                            <div class="pro-con">
+                                <img src="/Images/Login form.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-project">
+                            <h3 class="subheading pj-head">Log in/Sign Up Form</h3>
+                            <div class="project-type">
+                                <p class="type1">HTML</p>
+                                <p class="type2">CSS</p>
+                                <p class="type3">JavaScript</p>
+                            </div>
+                            <a href="" class="anchor-project">View Project<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-cards box-model">
+                        <div class="img-project">
+                            <div class="pro-con">
+                                <img src="/Images/report card.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="text-project">
+                            <h3 class="subheading pj-head">Report Card</h3>
+                            <div class="project-type">
+                                <p class="type1">HTML</p>
+                                <p class="type2">CSS</p>
+                                <p class="type3">JavaScript</p>
+                            </div>
+                            <a href="" class="anchor-project">View Project<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-cards box-model">
+                        <div class="img-project">
+                            <div class="pro-con">
+                                <img src="/Images/stopwatch.webp" alt="">
+                            </div>
+                        </div>
+                        <div class="text-project">
+                            <h3 class="subheading pj-head">Stopwatch</h3>
+                            <div class="project-type">
+                                <p class="type1">HTML</p>
+                                <p class="type2">CSS</p>
+                                <p class="type3">JavaScript</p>
+                            </div>
+                            <a href="" class="anchor-project">View Project<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-cards box-model">
+                        <div class="img-project">
+                            <div class="pro-con">
+                                <img src="/Images/timer.png" alt="">
+                            </div>
+                        </div>
+                        <div class="text-project">
+                            <h3 class="subheading pj-head">Timer</h3>
+                            <div class="project-type">
+                                <p class="type1">HTML</p>
+                                <p class="type2">CSS</p>
+                                <p class="type3">JavaScript</p>
+                            </div>
+                            <a href="" class="anchor-project">View Project<i class="fa-solid fa-caret-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section id="Contact">
+                <div class="con-title">
+                    <h1 class="section-title">Contact Me!</h1>
+                </div>
+                <div id="contact-content" class="content">
+                    <form action="">
+                        <div class="form-con">
+                            <div class="input-box">
+                                <input type="text" placeholder="Full Name">
+                                <input type="email" placeholder="Email Address">
+                            </div>
+                            <div class="input-box">
+                                <input type="number" placeholder="Mobile Number">
+                                <input type="text" placeholder="Email Subject">
+                            </div>
+                        </div>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                        <input type="submit" value="Send Message" class="submit-btn">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="text-footer">
+                <p>&copy; 2026 Lhorenz Soriano | All Rights Reserved.</p>
+            </div>
+            <div class="footerbtn">
+                <a href="#Home"><i class="fa-solid fa-circle-arrow-up">
+                    <div id="backbtn" class="tooltip">Back</div>
+                </i></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
