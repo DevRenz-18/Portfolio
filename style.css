@@ -16,13 +16,11 @@
     --form-bg: hsl(240, 38%, 25%);
     --font-p: clamp(1rem, 0.2351rem + 0.7968vw, 1.5rem);
     --lineheight: clamp(1.25rem, 0.4851rem + 0.7968vw, 1.75rem);
-    --font-h: 1rem;
 }
 body {
     height: 100vh;
-    /* background-color: black; */
     background: url("Images/bg.jpg") no-repeat center / cover;
-    padding: 3.5% 5%;
+    padding: 4% 5%;
     position: relative;
 }
 #container {
@@ -505,10 +503,6 @@ main hr {
     flex-direction: row;
     gap: 1.5em;
     padding: 2%;
-    
-    @media(max-width: 900px) {
-        flex-direction: column;
-    }
 }
 #about-profile {
     flex: 1;
@@ -615,7 +609,9 @@ main hr {
 #skill1.openskill,
 #skill2.openskill,
 #skill3.openskill {
-    height: 27rem;
+    height: 28.5rem;
+    background: var(--form-bg);
+    border: 2px solid var(--highlight-clr);
 }
 #skill1.openskill hr,
 #skill2.openskill hr,
@@ -839,10 +835,8 @@ footer {
     }
     #home-buttons {
         justify-content: center;
-        /* flex-direction: column;
-        gap: 2rem; */
     }
-}
+}   
 @media (max-width: 600px) {
     #home-buttons {
         flex-direction: column;
@@ -858,6 +852,9 @@ footer {
     }
     .menu {
         display: flex;
+    }
+    #about-content {
+        flex-direction: column;
     }
 }
 
@@ -909,4 +906,84 @@ footer {
         opacity: 1;
         transform: translateY(0);
     }
+}
+.con-title {
+    animation: sectiontitle both;
+    animation-timeline: view();
+    animation-range: entry 50% cover 70%;
+}
+@keyframes sectiontitle {
+    0% {
+        opacity: 0;
+        transform: translateY(75px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+#about-info {
+    animation: aboutbox1 both;
+    animation-timeline: view();
+    animation-range: entry 40% cover 50% ;
+}
+@keyframes aboutbox1 {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.about-animate {
+    animation: aboutSlide both;
+    animation-timeline: view();
+    animation-range: entry 25% cover 40%;
+}
+@keyframes aboutSlide {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.skills-animate, .project-cards {
+    animation: sliding both;
+    animation-timeline: view();
+    animation-range: entry 40% cover 50%;
+}
+@keyframes sliding {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.formmate {
+    animation: form both;
+    animation-timeline: view();
+    animation-range: entry 30% cover 40%;
+}
+@keyframes form {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.submit-btn {
+    animation: form both;
+    animation-timeline: view();
+    animation-range: entry 5% cover 25%;
 }
