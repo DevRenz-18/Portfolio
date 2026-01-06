@@ -643,6 +643,12 @@ main hr {
     display: flex; 
     flex-direction: column;
     box-shadow: 0 0 5px var(--highlight-clr);
+    transition: .4s;
+}
+.project-cards:hover {
+    border: 1.5px solid var(--highlight-clr);
+    box-shadow: 0 0 20px var(--highlight-clr);
+    background: var(--form-bg);
 }
 .img-project {
     flex: 1.5;
@@ -676,7 +682,7 @@ main hr {
     justify-content: space-between;
 }
 .pj-head {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin: 0;
 }
 .project-type {
@@ -707,7 +713,7 @@ main hr {
 }
 .type1, .type2, .type3 {
     font-weight: bold;
-    font-size: .8rem;
+    font-size: .75rem;
     display: flex;
     justify-content: center;
     align-items: center;
